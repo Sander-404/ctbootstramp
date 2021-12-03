@@ -1,11 +1,11 @@
-/*
+
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    /*box-sizing: border-box;*/
 }
-*/
 
 
-/* 
+
 
 De '.' staat voor een class in css
 De '#' staat voor een id in css
@@ -26,6 +26,7 @@ html {
 }
 
 #slider {
+    height: 100vh;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -103,10 +104,34 @@ img {
 }
 
 #image1 {
-    vertical-align: middle;
+/*    vertical-align: middle;
     max-width: 100%;
     padding: 0px;
     margin: 0px;
+
+    display: block;
+
+
+    height: 100%;
+    position: relative;
+    vertical-align: center;
+*/
+
+    object-fit: cover;
+
+    height: 100%;
+    width: 100%;
+
+    vertical-align: middle;
+
+    border-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    
+
+
 }
 
 /*.container-fluid
