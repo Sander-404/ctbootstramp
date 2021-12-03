@@ -122,21 +122,26 @@ img {
     height: 100%;
     width: 100%;
 
-    vertical-align: middle;
+    vertical-align: middle revert;
 
     border-style: none;
     border-top-style: none;
     border-right-style: none;
     border-bottom-style: none;
     border-left-style: none;
+
+
+    padding-left: 0;
+    padding-right: 0;
     
 
 
 }
 
+
+
 /*.container-fluid
 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-*/
+    padding-left: 0;
+    padding-right: 0;
+}*/
