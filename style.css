@@ -27,62 +27,66 @@ html {
     position: fixed;
     width: 100%;
     top: 0px;
-    background: white;
+    background: transparent;
     transition: background 0.5s;
-    }
-    section {
+}
+section {
     height: 500px;
     padding: 200px 0;
     font-size: 50px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    }
-    
-    section:nth-of-type(1) {
+}
+
+section:nth-of-type(1) {
     margin-top: 84px;
-    }
-    
-    #navArea .logo img {
+}
+
+
+#navArea .logo img {
+    color: white;
     height: 48px;
     transition: height 0.5s;
-    }
-    
-    #navArea ul {
+    mix-blend-mode: exclusion;
+/*filter: invert(1);*/
+}
+
+#navArea ul {
     list-style: none;
     display: flex;
     align-items: center;
     width: 400px;
     justify-content: space-around;
-    }
-    #navArea ul li a {
+}
+#navArea ul li a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
     transition: color 0.5s;
-    }
-    
-    #navArea.is-sticky {
+}
+
+#navArea.is-sticky {
     background: transparent;
-    }
-    
-    #navArea.is-sticky a {
+}
+
+#navArea.is-sticky a {
     color:#fff;
-    }
-    
-    #navArea.is-sticky .logo img {
+}
+
+#navArea.is-sticky .logo img {
     height:48px;
-    }
-    
-    section:nth-of-type(2n) {
+}
+
+section:nth-of-type(2n) {
     background: darkcyan;
     color: #fff;
-    }
-    
-    section:nth-of-type(2n+1) {
+}
+
+section:nth-of-type(2n+1) {
     background: white;
     color: #333;
-    }
+}
 /*_______NAVBAR_______*/
 
 
