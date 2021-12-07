@@ -23,12 +23,13 @@ html {
 #navArea {
     display: flex;
     justify-content: space-between;
-    padding: 0px 10%;
+    /*padding: 20px 28px;*/
+    padding: 5px 25px;
     position: fixed;
     width: 100%;
     top: 0px;
     background: transparent;
-    transition: background 0.5s;
+    transition: background 0.5s
 }
 section {
     height: 500px;
@@ -43,13 +44,13 @@ section:nth-of-type(1) {
     margin-top: 84px;
 }
 
-
 #navArea .logo img {
-    color: white;
+    /*color: white;*/
+    /*fill: white;*/
     height: 48px;
     transition: height 0.5s;
-    mix-blend-mode: exclusion;
-/*filter: invert(1);*/
+    mix-blend-mode: difference;
+    
 }
 
 #navArea ul {
@@ -57,21 +58,26 @@ section:nth-of-type(1) {
     display: flex;
     align-items: center;
     width: 400px;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
 }
 #navArea ul li a {
     text-decoration: none;
-    color: #000;
+    
+    /*color: #000;*/
+   
     font-weight: 600;
     transition: color 0.5s;
+    mix-blend-mode: difference
 }
 
 #navArea.is-sticky {
-    background: transparent;
+    background:white;
+    mix-blend-mode: difference;
 }
 
 #navArea.is-sticky a {
-    color:#fff;
+    /*color:#fff;*/
 }
 
 #navArea.is-sticky .logo img {
@@ -158,6 +164,7 @@ h1 {
         
 }
 
+
 /*
 img {
     vertical-align: middle;
@@ -171,49 +178,63 @@ img {
 
 .title-header {
     /*background-color: cyan;*/
+    font-weight: bold;
     text-align: center;
     justify-content: center;
     padding: 20px;
     margin: 0px;
 }
 
+.title-header2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+
 #image1 {
-/*    vertical-align: middle;
+/*  
+    vertical-align: middle;
     max-width: 100%;
     padding: 0px;
     margin: 0px;
-
     display: block;
-
-
     height: 100%;
     position: relative;
     vertical-align: center;
 */
-
+    background-image: none;
     object-fit: cover;
-
     height: 100%;
     width: 100%;
-
     vertical-align: middle revert;
-
     border-style: none;
     border-top-style: none;
     border-right-style: none;
     border-bottom-style: none;
     border-left-style: none;
-/*
-    padding-left: 0;
-    padding-right: 0;
-*/
+    margin: 0%;
+}
+
+#image2 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle revert;
+    border-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
 }
 
 
-/*
+
 .container-fluid
 {
     padding-left: 0;
     padding-right: 0;
 }
-*/
